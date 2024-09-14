@@ -1,0 +1,78 @@
+.app-container {
+  background-color: #ffffff;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading {
+  color: #000000;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 20px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 30%;
+  border-right: none;
+  border: 2px solid #000000;
+}
+
+.input-area {
+  padding: 10px;
+  border: 0px solid #ffff;
+  border-radius: 5px;
+  flex-grow: 1;
+  margin-right: 10px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Styling for the search icon */
+.search-logo {
+  width: 24px;
+  height: 24px;
+}
+
+/* Container for the list of destination items */
+.destination-list-container {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media screen and (max-width: 599px) {
+  .heading {
+    font-size: 28px;
+  }
+
+  .input-area {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .app-container {
+    padding: 40px;
+  }
+
+  .heading {
+    font-size: 32px;
+  }
+
+  .search-container {
+    width: 80%; /* Adjusted for tablet view */
+  }
+}

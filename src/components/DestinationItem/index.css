@@ -1,0 +1,63 @@
+.list-item {
+  margin-bottom: 20px;
+}
+
+.destination-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.destination-img {
+  width: 220px;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.destination-name {
+  color: #000000;
+  font-size: 15px;
+  font-family: 'Roboto';
+  margin-top: 10px;
+}
+
+/* Styles for tablet view */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .app-container {
+    padding: 40px;
+  }
+
+  .heading {
+    font-size: 32px;
+  }
+
+  .search-container {
+    width: 80%; /* Adjusted for tablet view */
+  }
+
+  .list-item {
+    max-width: 180px;
+  }
+}
+
+/* Styles for mobile view */
+@media (max-width: 599px) {
+  .destination-list-container {
+    gap: 10px;
+  }
+
+  .list-item {
+    max-width: 150px;
+    padding: 15px;
+  }
+
+  .destination-name {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .list-item {
+    max-width: 180px;
+  }
+}
